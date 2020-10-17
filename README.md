@@ -2,6 +2,8 @@
 
 Awesome Wikidata SPARQL Scripts
 
+To learn about Wikidata and SPARQL, check out these [notes](https://github.com/nikhilkumarsingh/awesome-wikidata-scripts/blob/main/wikidata.ipynb)
+
 
 ## How to run?
 

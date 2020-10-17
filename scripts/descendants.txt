@@ -1,0 +1,9 @@
+# Returns all the descendants of a person.
+# Params:
+# 1. person id (example: Q1001)
+
+SELECT ?descendant ?descendantLabel
+WHERE{
+  ?descendant (wdt:P25|wdt:P22)+ wd:${0}.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}

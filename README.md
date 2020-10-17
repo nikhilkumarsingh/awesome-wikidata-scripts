@@ -5,11 +5,24 @@ Awesome Wikidata SPARQL Scripts
 
 ## How to run?
 
-1. Save SPARQL query to `scripts` directory.
+1. Save SPARQL query to `scripts` directory. Every script can have a list of params which are of the format `${n}` where `n` is a non-negative integer. 
+   Example:
+    ```
+    # Returns all the descendants of a person.
+    # Params:
+    # 1. person id (example: Q1001)
+
+    SELECT ?descendant ?descendantLabel
+    WHERE{
+      ?descendant (wdt:P25|wdt:P22)+ wd:${0}.
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+    }
+    ```
+
 
 2. Run:
   ```bash
-  $ python3 query_runner.py <script-name> <optional-params>...
+  $ python3 query_runner.py <script-name> <param-1> <param-2> ... <param-n>
   ```
 
   Example:

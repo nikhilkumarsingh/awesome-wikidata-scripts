@@ -2,6 +2,7 @@ import re
 import sys
 
 from SPARQLWrapper import SPARQLWrapper, JSON
+from tabulate import tabulate
 
 WIKIDATA_ENDPOINT = "https://query.wikidata.org/sparql"
 DUMMY_USER_AGENT = "XYZ/3.0"
@@ -30,6 +31,16 @@ def substitute_query_params(query, params):
     return query
 
 
+def print_tabular_results(results):
+    table = []
+    for result in results['results']['bindings']:
+        row = {}
+        for key, value in result.items():
+            row[key] = value['value']
+        table.append(row)
+    print(tabulate(table, headers="keys"))
+
+
 def get_results(query):
     sparql_call = SPARQLWrapper(WIKIDATA_ENDPOINT, returnFormat=JSON, agent=DUMMY_USER_AGENT)
     sparql_call.setQuery(query)
@@ -41,4 +52,4 @@ if __name__ == "__main__":
         script_name = sys.argv[1]
         params = sys.argv[2:] if len(sys.argv) > 2 else []
         results = get_results(load_query(script_name, params))
-        print(results)
+        print_tabular_results(results)

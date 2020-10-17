@@ -1,0 +1,13 @@
+# Returns the list of nobel laureates.
+# Params:
+# 1. country id (example: Q668)
+# 2. gender (example: Q6581072)
+
+SELECT ?person ?personLabel
+WHERE{
+  ?person wdt:P166/wdt:P279 wd:Q7191;
+          wdt:P27 wd:${0};
+          wdt:P21 wd:${1}.
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}

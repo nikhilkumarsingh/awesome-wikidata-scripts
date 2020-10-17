@@ -19,5 +19,20 @@ Awesome Wikidata SPARQL Scripts
 
   Output:
   ```
-  {'head': {'vars': ['descendant', 'descendantLabel']}, 'results': {'bindings': [{'descendant': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q185403'}, 'descendantLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Ramdass Gandhi'}}, {'descendant': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q732728'}, 'descendantLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Devdas Gandhi'}}, {'descendant': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q1280678'}, 'descendantLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Manilal Gandhi'}}, {'descendant': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q1390715'}, 'descendantLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Harilal Gandhi'}}, {'descendant': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q100147817'}, 'descendantLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Sumitra Gandhi Kulkarni'}}, {'descendant': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q734521'}, 'descendantLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Rajmohan Gandhi'}}, {'descendant': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q1595192'}, 'descendantLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Ramchandra Gandhi'}}, {'descendant': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q3347330'}, 'descendantLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Gopalkrishna Gandhi'}}, {'descendant': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q100146686'}, 'descendantLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Tara Gandhi Bhattacharjee'}}, {'descendant': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q1324757'}, 'descendantLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Ela Gandhi'}}, {'descendant': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q3426281'}, 'descendantLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Arun Manilal Gandhi'}}, {'descendant': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q19664973'}, 'descendantLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Sonali Kulkarni'}}, {'descendant': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q5625451'}, 'descendantLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Leela Gandhi'}}, {'descendant': {'type': 'uri', 'value': 'http://www.wikidata.org/entity/Q5625256'}, 'descendantLabel': {'xml:lang': 'en', 'type': 'literal', 'value': 'Tushar Gandhi'}}]}}
+    descendant                                 descendantLabel
+    -----------------------------------------  -------------------------
+    http://www.wikidata.org/entity/Q185403     Ramdass Gandhi
+    http://www.wikidata.org/entity/Q732728     Devdas Gandhi
+    http://www.wikidata.org/entity/Q1280678    Manilal Gandhi
+    http://www.wikidata.org/entity/Q1390715    Harilal Gandhi
+    http://www.wikidata.org/entity/Q100147817  Sumitra Gandhi Kulkarni
+    http://www.wikidata.org/entity/Q734521     Rajmohan Gandhi
+    http://www.wikidata.org/entity/Q1595192    Ramchandra Gandhi
+    http://www.wikidata.org/entity/Q3347330    Gopalkrishna Gandhi
+    http://www.wikidata.org/entity/Q100146686  Tara Gandhi Bhattacharjee
+    http://www.wikidata.org/entity/Q1324757    Ela Gandhi
+    http://www.wikidata.org/entity/Q3426281    Arun Manilal Gandhi
+    http://www.wikidata.org/entity/Q19664973   Sonali Kulkarni
+    http://www.wikidata.org/entity/Q5625451    Leela Gandhi
+    http://www.wikidata.org/entity/Q5625256    Tushar Gandhi
   ```
